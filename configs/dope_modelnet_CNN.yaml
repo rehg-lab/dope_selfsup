@@ -1,0 +1,30 @@
+# model hparams
+exp_meta:
+    exp_name: "resnet18-dope"
+    log_dir: "logs/dope_modelnet_CNN"
+    val_freq: 5
+    batch_log_freq: 10
+    seed: 12345
+model_args:
+    model_type: "dope"
+    load_pt: False
+    contrast_T: 0.1
+    backbone: "resnet18"
+    negative_source: ["2nd_view", "other_obj"]
+    proj_dim: 256
+    fpn_dim: 128
+data_args:
+    n_pts: 32
+    n_ls_val_iters: 500
+    dataset: "modelnet"
+    batch_size: 256
+    num_workers: 8
+    prefetch_factor: 2
+    mask_size: 56 
+    aug_file: "augmentation_settings.json"
+optim_args:
+    epochs: 3000
+    scheduler_type: "cosine"
+    optim_type: "adamw"
+    learning_rate: 0.0001
+    weight_decay: 0.01
