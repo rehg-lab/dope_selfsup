@@ -4,7 +4,7 @@
 ![category_level_correspondence](images/dense_corr_cat.png)
 
 This is a repository containing PyTorch code for [Learning Dense Object Descriptors from Multiple
-Views for Low-shot Category Generalization](https://openreview.net/pdf?id=KJemAi9fymT).
+Views for Low-shot Category Generalization](https://arxiv.org/abs/2211.15059).
 
 If you use our work in your research, please cite
 ```bibtex
