@@ -50,6 +50,11 @@ This will output the validation accuracy for each saved checkpoint. To test the 
 python dope_selfsup/inference/testing.py --enc_p=<path to ckpt_dir in trained model directory> --split_dir=<split_000, split_001, etc>
 ```
 
+Checkpoints for the model trained on ABC and evaluated on ModelNet (all five val/test splits, including expected results for each split) can be downloaded with
+```
+wget https://dl.dropbox.com/s/llb0osx1wcchcxc/ABC_modelnet_lowshot_ckpts.tar
+```
+
 ## Code Credits
 We are grateful for the authors of the following code repositories, from where we borrow components used in this repository
 * [RFS](https://github.com/WangYueFt/rfs/)
